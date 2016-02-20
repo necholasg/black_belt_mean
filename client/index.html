@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Orders and Customers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js'>
+    </script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src='/app.js'></script>
+    <script src='./angular/factories/storageFactory.js'></script>
+    <script src='./angular/factories/questionFactory.js'></script>
+    <script src='./angular/controllers/dashboardController.js'></script>
+    <script src='./angular/controllers/questionController.js'></script>
+    <script src='./angular/controllers/boardController.js'></script>
+    <script src='./angular/controllers/answerController.js'></script>
+    <script src='./angular/controllers/helloController.js'></script>
+    <!-- load momentJS (required for angular-moment) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <!-- load angular-moment -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div ng-view="">
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#/" class='glyphicon glyphicon-th-list'> Hello</a></li>
+      <li><a href="#/dashboard" class='glyphicon glyphicon-piggy-bank'> Dashboard</a></li>
+      <li><a href="#/topic" class="glyphicon glyphicon-xbt"> Topic</a></li>
+      <li><a href="#/profile" class="glyphicon glyphicon-user"> Profile</a></li>
+    </ul>
+  </div>
+</nav> -->

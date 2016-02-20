@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+    <style media="screen">
+      .jumbotron{
+        margin-top: 100px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-controller='helloController'>
+      <div class="jumbotron">
+        <h1>Hello!</h1>
+        <h4>Please enter your name to join the question board</h4>
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" ng-model="form_data.name" class="form-control" name="name" placeholder="Name...">
+            <button type="button" class='btn btn-primary' ng-click='login()'>Join</button>
+            <!-- <pre>{{form_data | json}}</pre> -->
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

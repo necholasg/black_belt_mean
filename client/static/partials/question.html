@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Questions</title>
+  </head>
+  <body>
+    <div ng-controller='questionController'>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#/dashboard/{{user.id}}" class='glyphicon glyphicon-piggy-bank'> Home</a></li>
+            <li><a href="#/" class='glyphicon glyphicon-th-list'> Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <h1>New Question</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-7">
+          <pre ng-if="addedMessage">Your Question Has Been Successfully Added! {{onlineUser.name}}, You can now Eat your Burrito!</pre>
+          <pre ng-if="error">Minumum characters for your question is 10, please make your question longer :)</pre>
+          <label for="topic">Question:</label>
+          <input type="text" ng-model='newQuestionData.question' ng-required="true" ng-minlength="10" class="form-control" name="topic">
+          <label for="description">Description:</label>
+          <textarea ng-model='newQuestionData.description' class="form-control" name="description" rows="8" cols="40"></textarea>
+          <!-- <pre>{{newQuestionData | json}}</pre> -->
+          <br>
+          <button type="button" class="btn btn-primary" ng-click="newQuestion()" name="button">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
